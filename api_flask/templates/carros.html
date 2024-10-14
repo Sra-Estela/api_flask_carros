@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Carros</title>
+</head>
+<body>
+    <h1>Carros Registrados</h1>
+    <ul>
+        {% for carro in carros %}
+        <li>
+            ID: {{ carro.id }} - Marca: {{ carro.marca }} - Modelo: {{ carro.modelo }} - Ano: {{ carro.ano }}
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('pagina_inicial') }}">Voltar à Página Inicial</a>
+</body>
+</html>

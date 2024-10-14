@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+</head>
+<body>
+    <form action="{{ url_for('create_carro') }}" method="POST">
+        <label for="carro">Informações do carro (Formato: marca,modelo,ano):</label>
+        <input type="text" name="carro" id="carro" placeholder="Fiat,Elba,1997">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
