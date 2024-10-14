@@ -111,7 +111,7 @@ CREATE DATABASE `db_banco_py`;
 USE `db_banco_py`;
 
 CREATE TABLE `tb_carros` (
-	`id` int primary key not null auto_increment,
+    `id` int primary key not null auto_increment,
     `marca` varchar(100) not null,
     `modelo` varchar(100) not null,
     `ano` int not null
